@@ -1,0 +1,54 @@
+{
+  "examples": [
+    {
+      "ambiguous_question": "highest goals world football",
+      "generated_subquestions": [
+        "Who is recognized as the highest goalscorer in world football according to different sources?",
+        "Which players have scored the most goals for a single club, and who holds the record?",
+        "What are the different goal tallies reported for Josef Bican, Pel\u00e9, and Cristiano Ronaldo?",
+        "How do organizations like FIFA and RSSSF differ in their counting of career goals?",
+        "Did Cristiano Ronaldo surpass the estimated goal tally of Josef Bican, and what are the implications of this?",
+        "Who is the current holder of the IFFHS World's Best International Goal Scorer award?",
+        "What is the record for the most goals scored in a calendar year according to the IFFHS?",
+        "Who are the only players to have won the IFFHS World's Best International Goal Scorer award more than once?",
+        "Who holds the record for the most goals scored in a single international football match?",
+        "What is the highest number of goals scored by a player in a single professional football match?",
+        "What are the highest goal tallies recorded in various domestic football leagues?",
+        "Who are the players with the most goals scored in a single match in different countries?",
+        "What is the record for the most goals scored in a match in the Premier League?",
+        "Who is the current holder of the IFFHS World's Best Top Goal Scorer award?",
+        "What record does Lionel Messi hold regarding goals in a calendar year?",
+        "How many players scored 200 or more goals in top-tier national leagues from 2011 to 2020 according to the IFFHS?",
+        "Who holds the record for the most goals scored for a single club in top flight football?",
+        "Which players have scored the most goals in the Premier League era?",
+        "Who is the all-time top goal scorer in top flight English football?",
+        "What is Lionel Messi's total career goal count for club and country?",
+        "What records does Lionel Messi hold for goals scored in various competitions?",
+        "What is the significance of Messi's record for the most goals in a calendar year?",
+        "What is the record for the most goals scored by a player for a single club?",
+        "How many goals has Lionel Messi scored in the UEFA Champions League?"
+      ],
+      "unique_subquestions": [
+        "Who is recognized as the highest goalscorer in world football according to different sources?",
+        "Which players have scored the most goals for a single club, and who holds the record?",
+        "What are the different goal tallies reported for Josef Bican, Pel\u00e9, and Cristiano Ronaldo?",
+        "How do organizations like FIFA and RSSSF differ in their counting of career goals?",
+        "Did Cristiano Ronaldo surpass the estimated goal tally of Josef Bican, and what are the implications of this?",
+        "Who is the current holder of the IFFHS World's Best International Goal Scorer award?",
+        "What is the record for the most goals scored in a calendar year according to the IFFHS?",
+        "Who are the only players to have won the IFFHS World's Best International Goal Scorer award more than once?",
+        "Who holds the record for the most goals scored in a single international football match?",
+        "What is the highest number of goals scored by a player in a single professional football match?",
+        "What are the highest goal tallies recorded in various domestic football leagues?",
+        "What is the record for the most goals scored in a match in the Premier League?",
+        "How many players scored 200 or more goals in top-tier national leagues from 2011 to 2020 according to the IFFHS?",
+        "Which players have scored the most goals in the Premier League era?",
+        "Who is the all-time top goal scorer in top-flight English football?",
+        "What is Lionel Messi's total career goal count for club and country?",
+        "What records does Lionel Messi hold for goals scored in various competitions?",
+        "How many goals has Lionel Messi scored in the UEFA Champions League?"
+      ]
+    }
+  ],
+  "instruction": "Given a list of subquestions, which are derived disambiguations of an ambiguous query, remove nearly identical duplicates and leave only distinct ones.\nYou should provide a list of the remaining subquestions.\nMake sure you provide one subquestion per line.\n"
+}

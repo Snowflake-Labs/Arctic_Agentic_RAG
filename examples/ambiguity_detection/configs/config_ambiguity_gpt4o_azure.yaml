@@ -1,0 +1,9 @@
+name: ambiguity_agent
+type: AmbiguityDetection
+backbone:
+  name: generator
+  type: AzureOpenAI
+  model: gpt-4o-rag-research
+  api_version: 2024-07-01-preview
+  azure_endpoint: https://sfc-ml-sweden.openai.azure.com/
+prompt_version: v4

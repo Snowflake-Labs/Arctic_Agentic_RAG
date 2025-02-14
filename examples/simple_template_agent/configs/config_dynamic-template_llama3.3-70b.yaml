@@ -1,0 +1,7 @@
+name: qa_agent
+type: TemplateAgent
+backbone:
+  name: generator
+  type: CortexComplete
+  model: llama3.3-70b
+  authentication: sso

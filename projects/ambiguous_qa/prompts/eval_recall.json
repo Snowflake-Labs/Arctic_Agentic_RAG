@@ -1,0 +1,31 @@
+{
+  "examples": [
+    {
+      "ambiguous_question": "first US president to fly airplane",
+      "decisions": [
+        "Yes",
+        "Yes",
+        "No",
+        "Yes"
+      ],
+      "generated_subquestions": [
+        "Who was the first US president to fly an airplane while in office?",
+        "Who was the first US president to travel on a commercial airline?",
+        "Who was the first US president to be transported by a helicopter?",
+        "Who was shown a copy of the IMAX film \"To Fly!\" by US President Ronald Reagan?",
+        "Who was the second person to pilot a production Lockheed Constellation?",
+        "Who was the first American to fly a jet aircraft?",
+        "Who was the first pilot to fly a pressurized aircraft?",
+        "Who was the first U.S. pilot to carry mail?"
+      ],
+      "gt_subquestions": [
+        "First ever us president, past or present, to fly in an airplane?",
+        "First us president to fly in an airplane while in office?",
+        "First us president to fly in an airplane after being in office?",
+        "First us president to fly in an airplane while being in office?"
+      ],
+      "reason": "Let's analyze each subquestion in relation to the list provided:\n\nFirst ever US president, past or present, to fly in an airplane?\nIdentified: This aligns closely with the implied premise of the original query \"first US president to fly airplane.\"\nDecision: Yes\n\nFirst US president to fly in an airplane while in office?\nIdentified: This is directly represented in the list as: \"Who was the first US president to fly an airplane while in office?\"\nDecision: Yes\n\nFirst US president to fly in an airplane after being in office?\nNot identified: The list does not include a question about a president flying after leaving office.\nDecision: No\n\nFirst US president to fly in an airplane while being in office?\nIdentified: This question is semantically equivalent to: \"Who was the first US president to fly an airplane while in office?\"\nDecision: Yes"
+    }
+  ],
+  "instruction": "Given a list of generated disambiguated subquestions that clarify the intent of an ambiguous question, compare them with the list of predefined subquestions and determine how many have been successfully identified.\nYour final answer should return a binary label indicating whether each subquestion was covered or not.\nProvide Yes or No for each subquestion, and present them as a list of python strings.\n"
+}
