@@ -13,6 +13,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+# This section is inspired by DSPy: https://github.com/stanfordnlp/dspy
 
 import os
 from typing import Any, Callable, Union, cast
