@@ -48,6 +48,8 @@ def parse_args() -> argparse.Namespace:
             "error_analysis",
         ],
     )
+    parser.add_argument("--azure_endpoint", type=str, required=True)
+    parser.add_argument("--azure_model", type=str, required=True)
     return parser.parse_args()
 
 
@@ -823,11 +825,11 @@ def main(args: argparse.Namespace) -> None:
 
     logger = Logger(base_path=args.result_path, log_file=f"eval_{args.metric}.log")
     llm = AzureOAI(
-        model="gpt-4o-rag-research",
+        model=args.azure_model,
         uid="llm_judge",
         logger=logger,
         api_version="2024-07-01-preview",
-        azure_endpoint="https://sfc-ml-sweden.openai.azure.com/",
+        azure_endpoint=args.azure_endpoint,
         max_retries=1,
     )
 

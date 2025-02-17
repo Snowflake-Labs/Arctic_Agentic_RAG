@@ -86,8 +86,8 @@ class SnowflakeCompleteArguments:
 
 @dataclass
 class AzureOpenAIArguments:
+    azure_endpoint: str
     api_version: str = "2024-07-01-preview"
-    azure_endpoint: str = "https://sfc-ml-sweden.openai.azure.com/"
     max_retries: int = 1
 
 

@@ -6,9 +6,9 @@ embedding=${3:-"qa"}
 clustering=${4:-"hdbscan"}
 
 if [[ "$model_abbv" == "gpt4o" ]]; then
-    model="gpt-4o-rag-research"
+    model=$AZURE_GPT4O
 elif [[ "$model_abbv" == "gpt4o-mini" ]]; then
-    model="gpt-4o-mini-rag-research"
+    model=$AZURE_GPT4O_MINI
 else
     echo "Error: Unsupported model abbreviation '$model_abbv'"
     exit 1
@@ -26,4 +26,5 @@ python vd.py \
     --clustering $clustering \
     --encoder_name_or_path cortex_768 \
     --embedding $embedding \
+    --azure_endpoint $AZURE_ENDPOINT \
     --output_path "$outdir" 2>&1 | tee "$logfile"
