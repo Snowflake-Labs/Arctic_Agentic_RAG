@@ -3,7 +3,7 @@ type: AmbiguityDetection
 backbone:
   name: generator
   type: AzureOpenAI
-  model: gpt-4o-rag-research
-  api_version: 2024-07-01-preview
-  azure_endpoint: https://sfc-ml-sweden.openai.azure.com/
+  model: MODEL_NAME
+  api_version: YOUR_AZURE_API_VERSION
+  azure_endpoint: YOUR_AZURE_ENDPOINT
 prompt_version: v4
