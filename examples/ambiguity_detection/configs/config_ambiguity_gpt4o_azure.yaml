@@ -1,0 +1,9 @@
+name: ambiguity_agent
+type: AmbiguityDetection
+backbone:
+  name: generator
+  type: AzureOpenAI
+  model: MODEL_NAME
+  api_version: YOUR_AZURE_API_VERSION
+  azure_endpoint: YOUR_AZURE_ENDPOINT
+prompt_version: v4

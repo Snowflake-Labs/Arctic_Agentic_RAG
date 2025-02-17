@@ -1,0 +1,16 @@
+name: RAGTemplate
+system_prompt_file: "examples/simple_template_agent/configs/example_system_prompt.txt"
+fields:
+  question:
+    desc: The input question
+    mode: input
+    display_name: Question
+  contexts:
+    desc: The list of retrieved passages
+    mode: input
+    display_name: Retrieved Passages
+    formatting: "\n[Passage ${pid}] ${text}\n"
+  answer:
+    desc: The output answer
+    mode: output
+    display_name: Answer

@@ -1,0 +1,15 @@
+repos:
+  # Code formatting with Black
+  - repo: https://github.com/psf/black-pre-commit-mirror
+    rev: 24.8.0
+    hooks:
+      - id: black
+        args: [--preview, --enable-unstable-feature, string_processing]
+
+  # Linting with Flake8
+  - repo: https://github.com/PyCQA/flake8
+    rev: 7.1.1
+    hooks:
+      - id: flake8
+        # E704: multiple statements on one line (def) -> conflict with black
+        args: ["--extend-ignore=E704,E501, F401, E203"]

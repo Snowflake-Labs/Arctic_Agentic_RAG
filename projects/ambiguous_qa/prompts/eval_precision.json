@@ -1,0 +1,33 @@
+{
+  "examples": [
+    {
+      "ambiguous_question": "first US president to fly airplane",
+      "decisions": [
+        "Yes",
+        "Yes",
+        "No",
+        "No",
+        "No",
+        "No",
+        "No"
+      ],
+      "generated_subquestions": [
+        "Which US president was the first to fly in an aircraft?",
+        "Who was the first U.S. President to fly in an airplane while in office?",
+        "Which US president was the first sitting president to travel on a regularly scheduled commercial airline flight?",
+        "Who was the first U.S. President to fly in a jet airplane?",
+        "Who was the first incumbent US President to fly by airplane across the Atlantic Ocean?",
+        "Which U.S. president first flew on a United Airlines flight designated as Executive One?",
+        "Who was the first U.S. pilot to carry a United States Congressman as a passenger?"
+      ],
+      "gt_subquestions": [
+        "First ever us president, past or present, to fly in an airplane?",
+        "First us president to fly in an airplane while in office?",
+        "First us president to fly in an airplane after being in office?",
+        "First us president to fly in an airplane while being in office?"
+      ],
+      "reason": "Let's analyze each generated subquestion in relation to the list of ground-truth subquestions:\n\nWhich US president was the first to fly in an aircraft?\nIdentified: This matches semantically with \"First ever US president, past or present, to fly in an airplane?\"\nDecision: Yes\n\nWho was the first U.S. President to fly in an airplane while in office?\nIdentified: This aligns directly with \"First US president to fly in an airplane while in office?\"\nDecision: Yes\n\nWhich US president was the first sitting president to travel on a regularly scheduled commercial airline flight?\nNot identified: The predefined subquestions do not mention scheduled commercial airline flights.\nDecision: No\n\nWho was the first U.S. President to fly in a jet airplane?\nNot identified: The list does not include any references to jet airplanes.\nDecision: No\n\nWho was the first incumbent US President to fly by airplane across the Atlantic Ocean?\nNot identified: The predefined subquestions do not specify transatlantic flights.\nDecision: No\n\nWhich U.S. president first flew on a United Airlines flight designated as Executive One?\nNot identified: This specific event is not covered in the predefined list.\nDecision: No\n\nWho was the first U.S. pilot to carry a United States Congressman as a passenger?\nNot identified: This question does not pertain to a U.S. president flying in an airplane.\nDecision: No"
+    }
+  ],
+  "instruction": "Given a list of generated disambiguated subquestions that clarify the intent of an ambiguous question, compare them with the list of predefined subquestions and determine how many have been successfully matched.\nYour final answer should return a binary label indicating whether each subquestion was matched or not.\nProvide Yes or No for each generated subquestion, and present them as a list of python strings.\n"
+}

@@ -1,0 +1,29 @@
+{
+  "examples": [
+    {
+      "ambiguous_question": "West Highland Terrier life expectancy",
+      "answer": "12-15 years",
+      "decision": "Unanswerable",
+      "passage": "Life expectancy by breed Life expectancy usually varies within a range. For example, a Beagle (average life expectancy 13.3 years) usually lives to around 12\u201315 years, and a Scottish Terrier (average life expectancy 12 years) usually lives to around 10\u201316 years. The longest living verified dog so far is Bobi, a male purebred Rafeiro do Alentejo, who died at age 31 in 2023.",
+      "question": "What is the average life expectancy of a West Highland Terrier?",
+      "reason": "The passage does not provide information about the life expectancy of a West Highland Terrier specifically. Instead, it mentions the life expectancy for Beagles and Scottish Terriers but does not discuss West Highland Terriers at all."
+    },
+    {
+      "ambiguous_question": "West Highland Terrier life expectancy",
+      "answer": "None",
+      "decision": "Wrong answer",
+      "passage": "Life expectancy by breed Life expectancy usually varies within a range. For example, a Beagle (average life expectancy 13.3 years) usually lives to around 12\u201315 years, and a Scottish Terrier (average life expectancy 12 years) usually lives to around 10\u201316 years. The longest living verified dog so far is Bobi, a male purebred Rafeiro do Alentejo, who died at age 31 in 2023.",
+      "question": "What is an example of life expectancy variation in breeds like the West Highland Terrier?",
+      "reason": "The passage does mention variance in life expectancy of similar breeds such as a Scottish Terrier, but the answer missed it."
+    },
+    {
+      "ambiguous_question": "first US president to fly airplane",
+      "answer": "Richard Nixon",
+      "decision": "Correct",
+      "passage": "On December 26, 1973, then-President Richard Nixon became the only sitting president to travel on a regularly scheduled commercial airline flight when he flew on United Airlines flight 55 from Washington Dulles International Airport to Los Angeles International Airport, \"to set an example for the rest of the nation during the current energy crisis\" and to \"demonstrate his confidence in the airlines\". Nixon, first lady Pat, daughter Tricia, and 22 staffers, security, and pool purchased 13 first-class tickets at $217.64, and 12 coach tickets at $167.64 aboard the DC-10 on what is traditionally not a very busy flight, and quietly boarded the plane without fanfare in order to maintain security for the flight prior to departure. A Nixon aide carried a suitcase-sized secure communication device on board the plane, so that the President could remain in contact with Washington in the event of an emergency.",
+      "question": "Who was the first US president to travel on a commercial airline?",
+      "reason": "It is a valid clarification question to the original ambiguous question. The passage explicitly states that President Richard Nixon was the first sitting US president to travel on a commercial airline flight, which occurred on December 26, 1973."
+    }
+  ],
+  "instruction": "Given a question and an associated passage, decide if the given answer correctly answers the question while faithfully grounded on the given passage.\nAlso, you have to take into account whether it is relevant enough to be considered as a valid clarification question of an original ambiguous question.\nYour final answer should be one of the following.\n\n1. \"Irrelevant\": The question is too unrelated to the original ambigous question. It does not strictly have to be a disambiguation of the original question, but you should decide if the user who issued the original query would be interested in the question and its answer.\n2. \"Unanswerable\": The associated passage does not provide enough support to answer the question.\n3. \"Wrong answer\": The question was valid, but the answer is incorrect according to the passage.\n4. \"Correct\": It satisfies all the criteria to be considered correct.\n"
+}

@@ -1,0 +1,19 @@
+{
+  "examples": [
+    {
+      "answer": "Christine Sinclair",
+      "decision": "No",
+      "passage": "The first player to reach 100 international goals was Italian Elisabetta Vignotto. Abby Wambach scored 100 goals in 9 years, while Christine Sinclair reached the milestone in just under 10 years while Mia Hamm is the youngest player to score 100 international goals at the age of 26 years 185 days. Most played exclusively in the forward position, with Kristine Lilly and Michelle Akers having also played as midfielder. All players scored at a high average rate of more than one goal every three matches. International goals in this list should not include goals scored in penalty-shoot-out; see Penalty shootout (association football). Players who are currently active at international level are indicated in bold type background.",
+      "question": "Who has the highest goals in women's world international football?",
+      "reason": "The passage provides details about players who reached the milestone of 100 international goals, including information about their scoring rates and positions, but it does not directly mention who has the highest goals in women's world international football."
+    },
+    {
+      "answer": "Rupert Grint",
+      "decision": "Yes",
+      "passage": "Dozens of actors of the United Kingdom and Ireland voiced or portrayed characters appearing in the \"Harry Potter\" film series based on the book series by J. K. Rowling. In all the films, Daniel Radcliffe played Harry Potter, Rupert Grint played Ron Weasley and Emma Watson played Hermione Granger. When they were cast only Radcliffe had previously acted in a film. Complementing them on screen are such actors as Helena Bonham Carter, Jim Broadbent, John Cleese, Robbie Coltrane, Warwick Davis, Ralph Fiennes, Michael Gambon, Brendan Gleeson, Richard Griffiths, Richard Harris, John Hurt, Jason Isaacs, Miriam Margolyes, Helen McCrory, Gary Oldman, Alan Rickman, Fiona Shaw, Maggie Smith, Timothy Spall, Imelda Staunton, David Thewlis, Emma Thompson, and Julie Walters, among others. Thirteen actors have appeared as the same character in all eight films of the series.",
+      "question": "Who played ron weasley in harry potter?",
+      "reason": "The passage explicitly states that Rupert Grint played Ron Weasley in the \"Harry Potter\" film series."
+    }
+  ],
+  "instruction": "Given a question, an answer and an associated passage, decide if the passage can support the answer, providing enough evidence to reach the answer given the question.\nYour final answer should be either Yes or No.\n"
+}
