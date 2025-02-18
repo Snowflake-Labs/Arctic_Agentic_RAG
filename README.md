@@ -1,11 +1,44 @@
-# Arctic Agentic RAG Framework: Simplifying Agentic Retrieval-Augmented Generation
+# Arctic Agentic RAG Framework: Smarter, Faster, Easier, and More Reliable AI
 
 ## Overview
-The **Arctic Agentic RAG Framework** is a sophisticated retrieval-augmented generation (RAG) system tailored for agentic workflows. It supports various strategies for retrieval, reasoning, and response generation using large language models (LLMs). The framework's modular design allows for easy customization to fit different agentic setups. Arctic Agentic RAG Framework is built upon [Arctic Agentic RAG series](PLACEHOLD) and will continue release features associted with the eposide rolls out.
+Enterprise AI demands more than static retrieval---it needs intelligence that can understand, reason, and adapt in real time.
+Traditional Retrieval-Augmented Generation (RAG) systems struggle with ambiguous queries, multimodal data, and complex reasoning, making it difficult for businesses to extract accurate and reliable information.
+Arctic Agentic RAG is designed to go beyond these limitations.
+It's an enterprise-ready framework built for agentic workflows, enabling AI-driven retrieval that is smarter, faster, easier to use, and more reliable than ever before.
+By integrating reasoning, adaptive retrieval, and modular agent-based execution, Arctic Agentic RAG transforms how businesses interact with AI.
 
-## Features
+📢 **Learn more about how Agentic RAG redefines enterprise AI in our [overview blog](TBD).**
+
+## An Iterative, Research-Driven, Open-Source Approach
+AI is evolving rapidly, and so is our research.
+Arctic Agentic RAG is an open-source project designed to advance agentic RAG workflows through a collaborative, iterative approach.
+Rather than offering a one-size-fits-all solution, we take an incremental path, tackling one enterprise AI challenge at a time.
+Our Innovation Episodes share ongoing progress, delving into specific challenges, problem formulations, new insights, and their corresponding open-source implementations.
+By making our research open, we invite contributions, real-world experimentation, and feedback from the broader AI and developer community.
+
+### Episode 1: Tackling Ambiguous Queries with VerDICT
+One of the biggest challenges in AI-driven retrieval is handling ambiguous queries---where multiple interpretations exist, and incorrect retrieval can lead to irrelevant or misleading responses.
+Arctic Agentic RAG tackles this head-on in Episode 1 of our innovation series.
+
+🚀 Introducing VerDICT (Verified DIversity with ConsolidaTion)---a breakthrough approach that:
+<ul style="list-style-type:none; padding-left:0; margin-left:0;">
+<li>✅ Enhances response accuracy by systematically verifying sources.</li>
+<li>✅ Reduces computational cost by minimizing unnecessary retrievals.</li>
+<li>✅ Improves user experience with faster, more precise, and contextually grounded answers.</li>
+</ul>
+
+<ul style="list-style-type:none; padding-left:0; margin-left:0;">
+<li>📢 Dive deeper into Episode 1 and see VerDICT in action in our blog.</li>
+<li>📄 For a detailed technical analysis, check out our research paper: "<a href="https://arxiv.org/abs/2502.10352">Agentic Verification for Ambiguous Query Disambiguation</a>".</li>
+</ul>
+
+Stay tuned for more innovations and episodes!
+
+## Key Software Features
+Our framework's modular design allows for easy customization to fit different agentic setups.
+
 - **Agent-Based Modular Design**: Supports template-based agents for various usage.
-- **Multiple LLM-backend Integrations**: Compatible with Snowflake, OpenAI, Azure OpenAI, Ollama, vLLM, and custom LLM providers.
+- **Multiple LLM-Backend Integrations**: Compatible with Snowflake, OpenAI, Azure OpenAI, Ollama, vLLM, and custom LLM providers.
 - **Configurable Pipelines**: Utilizes YAML-based configuration for straightforward experiment management.
 - **Prebuilt Examples**: Includes ready-to-run examples for QA tasks using different agent types.
 
@@ -26,3 +59,7 @@ Please refer to [Ambigious QA](projects/ambiguous_qa) and the associted README t
 
 ## Contributing
 Please refer to [contribution](CONTRIBUTION.md) if you want to contribute to this project.
+
+## Join Our Community
+Connect with researchers and practitioners shaping the future of AI.
+Join our [AI Research Community](https://snowflake.discourse.group/c/ai-research-and-development-community) now!
