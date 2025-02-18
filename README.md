@@ -7,7 +7,7 @@ Arctic Agentic RAG is designed to go beyond these limitations.
 It's an enterprise-ready framework built for agentic workflows, enabling AI-driven retrieval that is smarter, faster, easier to use, and more reliable than ever before.
 By integrating reasoning, adaptive retrieval, and modular agent-based execution, Arctic Agentic RAG transforms how businesses interact with AI.
 
-📢 **Learn more about how Agentic RAG redefines enterprise AI in our [overview blog](TBD).**
+📢 **Learn more about how Agentic RAG redefines enterprise AI in our [overview blog](https://www.snowflake.com/en/blog/arctic-agentic-rag-enterprise-ai/).**
 
 ## An Iterative, Research-Driven, Open-Source Approach
 AI is evolving rapidly, and so is our research.
@@ -26,7 +26,7 @@ Arctic Agentic RAG tackles this head-on in Episode 1 of our innovation series.
 ✅ Reduces computational cost by minimizing unnecessary retrievals.  
 ✅ Improves user experience with faster, more precise, and contextually grounded answers.
 
-📢 Dive deeper into Episode 1 and see VerDICT in action in our blog.  
+📢 Dive deeper into Episode 1 and see VerDICT in action in our [blog](https://www.snowflake.com/en/blog/arctic-agentic-rag-query-clarification/).  
 📄 For a detailed technical analysis, check out our research paper: "[Agentic Verification for Ambiguous Query Disambiguation](https://arxiv.org/abs/2502.10352)".  
 Stay tuned for more innovations and episodes!
 
@@ -51,7 +51,7 @@ This setup allows modifications to be reflected directly in the runtime environm
 Please refer to [Demo](examples/simple_RAG/rag_demo.ipynb) to utilize Cortex Search and Cortex Complete functionality to build your first RAG workflow.
 
 ### Ambigious QA
-Please refer to [Ambigious QA](projects/ambiguous_qa) and the associted README to reproduce the results of [paper](PLACEHOLDER)
+Please refer to [Ambigious QA](projects/ambiguous_qa) and the associted README.
 
 ## Contributing
 Please refer to [contribution](CONTRIBUTION.md) if you want to contribute to this project.
