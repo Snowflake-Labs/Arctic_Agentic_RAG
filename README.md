@@ -21,17 +21,13 @@ One of the biggest challenges in AI-driven retrieval is handling ambiguous queri
 Arctic Agentic RAG tackles this head-on in Episode 1 of our innovation series.
 
 🚀 Introducing VerDICT (Verified DIversity with ConsolidaTion)---a breakthrough approach that:
-<ul style="list-style-type:none; padding-left:0; margin-left:0;">
-<li>✅ Enhances response accuracy by systematically verifying sources.</li>
-<li>✅ Reduces computational cost by minimizing unnecessary retrievals.</li>
-<li>✅ Improves user experience with faster, more precise, and contextually grounded answers.</li>
-</ul>
 
-<ul style="list-style-type:none; padding-left:0; margin-left:0;">
-<li>📢 Dive deeper into Episode 1 and see VerDICT in action in our blog.</li>
-<li>📄 For a detailed technical analysis, check out our research paper: "<a href="https://arxiv.org/abs/2502.10352">Agentic Verification for Ambiguous Query Disambiguation</a>".</li>
-</ul>
+✅ Enhances response accuracy by systematically verifying sources.  
+✅ Reduces computational cost by minimizing unnecessary retrievals.  
+✅ Improves user experience with faster, more precise, and contextually grounded answers.
 
+📢 Dive deeper into Episode 1 and see VerDICT in action in our blog.  
+📄 For a detailed technical analysis, check out our research paper: "[Agentic Verification for Ambiguous Query Disambiguation](https://arxiv.org/abs/2502.10352)".  
 Stay tuned for more innovations and episodes!
 
 ## Key Software Features
