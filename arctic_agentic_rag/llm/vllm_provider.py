@@ -53,12 +53,12 @@ class VLLMProvider(BaseLLM):
         }
 
         try:
-            self.logger.info("Initializing VLLM...")
+            self.logger.log_info("Initializing VLLM...")
             self.engine = LLM(**engine_kwargs)
-            self.logger.info(f"Successfully initialized VLLM with model: {model}")
+            self.logger.log_info(f"Successfully initialized VLLM with model: {model}")
         except Exception as e:
             error_msg = f"Failed to initialize VLLM engine: {str(e)}"
-            self.logger.error(error_msg)
+            self.logger.log_error(error_msg)
             raise RuntimeError(error_msg)
 
     def generate_response(self, prompt: str, **kwargs) -> str:
@@ -79,20 +79,20 @@ class VLLMProvider(BaseLLM):
                 max_tokens=kwargs.get("max_tokens", self.max_tokens),
             )
 
-            self.logger.debug(f"Generating response for prompt: {prompt[:100]}...")
+            # self.logger.log_debug(f"Generating response for prompt: {prompt[:100]}...")
             outputs = self.engine.generate([prompt], sampling_params)
 
             if not outputs:
-                self.logger.error("VLLM generated no output")
+                self.logger.log_error("VLLM generated no output")
                 return ""
 
             response = outputs[0].outputs[0].text
-            self.logger.debug(f"Generated response: {response[:100]}...")
+            # self.logger.log_debug(f"Generated response: {response[:100]}...")
             return response
 
         except Exception as e:
             error_msg = f"VLLM generation error: {str(e)}"
-            self.logger.error(error_msg)
+            self.logger.log_error(error_msg)
             return f"Error: {error_msg}"
 
     def generate_response_from_messages(
@@ -118,7 +118,7 @@ class VLLMProvider(BaseLLM):
 
         except Exception as e:
             error_msg = f"VLLM message generation error: {str(e)}"
-            self.logger.error(error_msg)
+            self.logger.log_error(error_msg)
             return f"Error: {error_msg}"
 
     def _convert_messages_to_prompt(self, messages: list[Message]) -> str:
@@ -158,7 +158,7 @@ class VLLMProvider(BaseLLM):
             return {"model": self.model, "provider": "vllm"}
         except Exception as e:
             error_msg = f"Error getting VLLM stats: {str(e)}"
-            self.logger.error(error_msg)
+            self.logger.log_error(error_msg)
             return {}
 
 
